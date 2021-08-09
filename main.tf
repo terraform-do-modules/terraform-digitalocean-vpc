@@ -23,7 +23,6 @@ locals {
 #Description : Terraform label module variables.
 module "labels" {
   source = "git::https://github.com/terraform-do-modules/terraform-digitalocean-labels.git?ref=0.15"
-  #version     = "0.15.0"
   name        = var.name
   environment = var.environment
   label_order = var.label_order
