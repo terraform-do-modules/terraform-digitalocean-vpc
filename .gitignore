@@ -207,3 +207,4 @@ terraform.tfstate
 *.tfstate.backup
 *.iml
 *.terraform.lock.hcl
+!/_example/.terraform.lock.hcl
