@@ -38,11 +38,9 @@ usage : |-
         module "vpc" {
         source            = "terraform-do-modules/vpc/digitalocean"
         version           = "0.15.0"
-        name              = "vpc"
+        name              = "app"
         environment       = "test"
-        label_order       = ["environment", "name"]
-        enable_vpc        = true
         ip_range          = "10.0.0.0/16"
-        region            = "bangalore-1"
+        region            = "blr1"
       }
   ```

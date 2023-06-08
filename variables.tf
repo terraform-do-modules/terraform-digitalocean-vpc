@@ -14,14 +14,8 @@ variable "environment" {
 
 variable "label_order" {
   type        = list(any)
-  default     = []
+  default     = ["name", "environment"]
   description = "Label order, e.g. `name`."
-}
-
-variable "delimiter" {
-  type        = string
-  default     = "-"
-  description = "Delimiter to be used between `organization`, `environment`, `name` and `attributes`."
 }
 
 #Module      : VPC
@@ -48,4 +42,10 @@ variable "ip_range" {
   type        = string
   default     = ""
   description = "The range of IP addresses for the VPC in CIDR notation. Network ranges cannot overlap with other networks in the same account and must be in range of private addresses as defined in RFC1918. It may not be larger than /16 or smaller than /24."
+}
+
+variable "managedby" {
+  type        = string
+  default     = "terraform-do-modules"
+  description = "ManagedBy, eg 'terraform-do-modules' or 'hello@clouddrove.com'"
 }
