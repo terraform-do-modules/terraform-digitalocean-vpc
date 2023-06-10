@@ -13,24 +13,24 @@ jobs:
         uses: actions/checkout@master
 
       - name: 'Terraform Format'
-        uses: 'clouddrove/github-actions@v9.0.1'
+        uses: 'clouddrove/github-actions@9.0.2'
         with:
           actions_subcommand: 'fmt'
 
       - name: 'Terraform init'
-        uses: 'clouddrove/github-actions@v9.0.1'
+        uses: 'clouddrove/github-actions@9.0.2'
         with:
           actions_subcommand: 'init'
           tf_actions_working_dir: ./_example
 
       - name: 'Terraform validate'
-        uses: 'clouddrove/github-actions@v9.0.1'
+        uses: 'clouddrove/github-actions@9.0.2'
         with:
           actions_subcommand: 'validate'
           tf_actions_working_dir: ./_example
 
       - name: 'Terraform plan'
-        uses: 'clouddrove/github-actions@v9.0.1'
+        uses: 'clouddrove/github-actions@9.0.2'
         with:
           actions_subcommand: 'plan'
           tf_actions_working_dir: ./_example
