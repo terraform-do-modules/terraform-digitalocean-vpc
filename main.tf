@@ -3,11 +3,11 @@
 #Description : Terraform label module variables.
 module "labels" {
   source      = "terraform-do-modules/labels/digitalocean"
-  version     = "0.15.0"
+  version     = "0.0.1"
   name        = var.name
   environment = var.environment
-  label_order = var.label_order
   managedby   = var.managedby
+  label_order = var.label_order
 }
 
 #Module      : VPC
