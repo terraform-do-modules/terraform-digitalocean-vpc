@@ -11,7 +11,7 @@ name : Terraform DigitalOcean VPC
 license: "MIT"
 
 # Canonical GitHub repo
-github_repo: clouddrove/terraform-digitalocean-vpc
+github_repo: terraform-do-modules/terraform-digitalocean-vpc
 
 # Badges to display
 badges:
