@@ -13,7 +13,7 @@ module "labels" {
 #Module      : VPC
 #Description : VPCs are virtual networks containing resources that can communicate with each other in full isolation, using private IP addresses.
 resource "digitalocean_vpc" "default" {
-  count = var.enable_vpc == true ? 1 : 0
+  count = var.enabled == true ? 1 : 0
 
   name        = format("%s-vpc", module.labels.id)
   region      = var.region

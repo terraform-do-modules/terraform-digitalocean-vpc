@@ -20,7 +20,7 @@ variable "label_order" {
 
 #Module      : VPC
 #Description : VPCs are virtual networks containing resources that can communicate with each other in full isolation, using private IP addresses.
-variable "enable_vpc" {
+variable "enabled" {
   type        = bool
   default     = true
   description = "A boolean flag to enable/disable vpc."
