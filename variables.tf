@@ -29,7 +29,7 @@ variable "enabled" {
 variable "region" {
   type        = string
   default     = "blr1"
-  description = "The region to create VPC, like ``london-1`` , ``bangalore-1`` ,``newyork-3`` ``toronto-1``. "
+  description = "The region to create VPC, like ``blr1``"
 }
 
 variable "description" {
@@ -46,6 +46,6 @@ variable "ip_range" {
 
 variable "managedby" {
   type        = string
-  default     = "terraform-do-modules"
+  default     = "hello@clouddrove.com"
   description = "ManagedBy, eg 'terraform-do-modules' or 'hello@clouddrove.com'"
 }
