@@ -1,6 +1,4 @@
-provider "digitalocean" {
-  #  token = ""
-}
+provider "digitalocean" {}
 
 ##------------------------------------------------
 ## VPC module call
