@@ -1,3 +1,17 @@
+## [1.0.2] - 2026-02-06
+
+### Changes
+- 🐛 fix: update tf-checks workflow to match available examples
+- ⬆️ upgrade: update examples to use provider >= 2.70.0
+- 📚 Add comprehensive CONTRIBUTING.md
+- ⬆️ Upgrade provider & standardize workflows
+- 📝 Update CHANGELOG for v1.0.1
+- chore: update Terraform version requirement to >= 1.5.4
+- Merge pull request #42 from terraform-do-modules/fix/workflow
+- fix: updated workflow
+- fix: updated workflow
+- Bump actions/checkout from 4 to 6 (#41)
+
 # Changelog
 All notable changes to this project will be documented in this file.
 
