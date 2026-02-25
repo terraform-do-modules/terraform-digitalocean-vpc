@@ -1,6 +1,7 @@
-name: 'PR Validation'
+name: PR Validation
+
 on:
-  pull_request_target: 
+  pull_request_target:
     types:
       - opened
       - edited
@@ -8,14 +9,9 @@ on:
       - reopened
 
 jobs:
-  pre-validation:
+  pr-validation:
     if: github.actor != 'dependabot[bot]'
     uses: clouddrove/github-shared-workflows/.github/workflows/pr_checks.yml@f6cad30db3bfad5fc248a08ab65ac82eb8dbcb82 # pinned to latest
     secrets: inherit
     with:
       subjectPattern: '^.+$'
-      # Pass types as a comma-separated string so webiny/action-conventional-commits
-      # can split correctly (it uses .split(",") internally).
-      # The shared workflow default uses a multiline YAML block which breaks the split.
-      types: 'feat,fix,docs,ci,chore,test,refactor,style,perf,build,revert'
-      checkLabels: false

@@ -1,11 +1,11 @@
 name: Security Scan
 
-on: 
-  pull_request: 
+on:
+  pull_request:
     branches: [master]
     types: [opened, synchronize]
 
-jobs: 
+jobs:
   checkov:
     uses: clouddrove/github-shared-workflows/.github/workflows/checkov.yml@f6cad30db3bfad5fc248a08ab65ac82eb8dbcb82 # pinned to latest
     with:
