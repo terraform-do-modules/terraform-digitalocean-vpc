@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ssh:*)",
+      "Bash(git checkout:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(GIT_SSH_COMMAND=\"ssh -i ~/.ssh/id_rsa -o IdentitiesOnly=yes\" git push:*)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:github.com)",
+      "WebSearch",
+      "Bash(gh pr:*)",
+      "Bash(curl:*)"
+    ]
+  }
+}
