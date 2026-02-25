@@ -14,3 +14,8 @@ jobs:
     secrets: inherit
     with:
       subjectPattern: '^.+$'
+      # Pass types as a comma-separated string so webiny/action-conventional-commits
+      # can split correctly (it uses .split(",") internally).
+      # The shared workflow default uses a multiline YAML block which breaks the split.
+      types: 'feat,fix,docs,ci,chore,test,refactor,style,perf,build,revert'
+      checkLabels: false
