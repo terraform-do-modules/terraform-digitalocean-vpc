@@ -9,7 +9,7 @@ permissions:
 
 jobs:
   complete-example:
-    uses: clouddrove/github-shared-workflows/.github/workflows/stf-checks.yml@f6cad30db3bfad5fc248a08ab65ac82eb8dbcb82
+    uses: clouddrove/github-shared-workflows/.github/workflows/stf-checks.yml@a26d1abb482f8615f50f54e3e5ca2b9ed0e349d4
     with:
       provider: digitalocean
       working_directory: ./_examples/complete/
