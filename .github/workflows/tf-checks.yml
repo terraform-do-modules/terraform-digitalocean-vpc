@@ -8,7 +8,7 @@ jobs:
   complete-example:
     uses: clouddrove/github-shared-workflows/.github/workflows/stf-checks.yml@d27d2d3b49bcf14db85bdfb0f57956abf18bb091 # pinned to latest
     with:
-      provider: digitalocean
+      provider: none
       working_directory: './_examples/complete/'
 
 # Separate job for TFlint workflow call
