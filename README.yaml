@@ -1,26 +1,26 @@
----
-#
-# This is the canonical configuration for the `README.md`
-# Run `make readme` to rebuild the `README.md`
-#
+name: Terraform DigitalOcean VPC
 
-# Name of this project
-name : Terraform DigitalOcean VPC
+intro: |-
+  Streamline operations, automate workflows, improve team collaboration, and deploy with confidence using our complete DevOps toolkit.
 
-# License of this project
+badges_text: "Latest Release | tfsec | License | Changelog"
+
+about: |-
+  Terraform module to create and manage Virtual Private Cloud on Digital Ocean.
+
 license: "APACHE"
 
-# Canonical GitHub repo
 github_repo: terraform-do-modules/terraform-digitalocean-vpc
 
-# Badges to display
 badges:
   - name: "Terraform"
     image: "https://img.shields.io/badge/Terraform-v1.6-green"
     url: "https://www.terraform.io"
+
   - name: "OpenTofu"
     image: "https://img.shields.io/badge/OpenTofu-v1.6-purple"
     url: "https://opentofu.org"
+
   - name: "Licence"
     image: "https://img.shields.io/badge/License-APACHE-blue.svg"
     url: "LICENSE.md"
@@ -30,22 +30,17 @@ prerequesties:
     url: https://developer.hashicorp.com/terraform/install
   - name: OpenTofu >= 1.6.0
     url: https://opentofu.org/docs/intro/install/
-#  description of this project
+
 description: |-
-  VPCs are virtual networks containing resources that can communicate with each other in full isolation, using private IP addresses.
+  Terraform module to create and manage Virtual Private Cloud on Digital Ocean.
 
-# extra content
-include:
-  - "terraform.md"
-
-# How to use this project
 usage : |-
   ### Simple Example
   Here is an example of how you can use this module in your inventory structure:
   ```hcl
   module "vpc" {
     source      = "terraform-do-modules/vpc/digitalocean"
-    version     = "1.0.0"
+    version     = "1.0.7"
     name        = "app"
     environment = "test"
     ip_range    = "10.0.0.0/16"
@@ -68,12 +63,12 @@ usage : |-
   ```
 
   ### Deploy with Terragrunt
-  See [`_examples/terragrunt/terragrunt.hcl`](./_examples/terragrunt/terragrunt.hcl) for a complete example using DigitalOcean Spaces as remote state.
+  See [`examples/terragrunt/terragrunt.hcl`](./examples/terragrunt/terragrunt.hcl) for a complete example using DigitalOcean Spaces as remote state.
   ```bash
   export DIGITALOCEAN_TOKEN="<your-token>"
   export SPACES_ACCESS_KEY_ID="<your-spaces-key>"
   export SPACES_SECRET_ACCESS_KEY="<your-spaces-secret>"
-  cd _examples/terragrunt
+  cd examples/terragrunt
   terragrunt init
   terragrunt plan
   terragrunt apply
