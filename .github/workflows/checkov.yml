@@ -9,7 +9,7 @@ on:
 jobs:
   checkov:
     if: github.actor != 'dependabot[bot]'
-    uses: clouddrove/github-shared-workflows/.github/workflows/security-checkov.yml@2.1.3
+    uses: clouddrove/github-shared-workflows/.github/workflows/security-checkov.yml@v2.1.6
     with:
       directory: '.'
       continue_on_error: 'true'
