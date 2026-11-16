@@ -1,3 +1,8 @@
+## [v1.0.8] - 2026-11-16
+### :wrench: Chores
+- [`d19c5d2`](https://github.com/terraform-do-modules/terraform-digitalocean-vpc/commit/d19c5d2ad98ea6b01fe9b490bab5d58329c3dfa7) - **deps**: bump terraform-do-modules/labels/digitalocean *(commit by [@dependabot[bot]](https://github.com/apps/dependabot))*
+
+
 ## [1.0.4] - 2026-02-25
 
 ### 📚 Documentation
@@ -49,3 +54,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 [1.0.0]: https://github.com/terraform-do-modules/terraform-digitalocean-vpc/compare/0.0.1...1.0.0
+[v1.0.8]: https://github.com/terraform-do-modules/terraform-digitalocean-vpc/compare/v1.0.7...v1.0.8
